@@ -99,17 +99,17 @@ for epoch in range(500):
     test_accuracy_history.append(accuracy)
     #print(accuracy)
 
-print(test_accuracy_history[-1])
+"""
 weight1 = mnist_net.fc1.weight.data.numpy()
 weight2 = mnist_net.fc2.weight.data.numpy()
 bias1 = mnist_net.fc1.bias.data.numpy()
 bias2 = mnist_net.fc2.bias.data.numpy()
-"""
 np.savetxt("1.txt", weight1)
 np.savetxt("2.txt", weight2)
 np.savetxt("3.txt", bias1)
 np.savetxt("4.txt", bias2)
 """
+#show graphs
 plt.plot([loss.detach().numpy() for loss in test_loss_history])
 plt.show()
 plt.plot([loss.detach().numpy() for loss in test_accuracy_history])
