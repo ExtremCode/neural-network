@@ -31,6 +31,7 @@ print(y_train[0])
 """
 X_train = X_train.reshape([-1, 28 * 28])
 X_test = X_test.reshape([-1, 28 * 28])
+
 """
 class FCLayer():
     def __init__(self, enters, exits):
